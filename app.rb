@@ -8,6 +8,7 @@ class App < Sinatra::Base
 
   post '/newteam' do 
     @team = params
+    @roles = ['Team Name', 'Coach', 'Point Guard', 'Shooting Guard', 'Small Forward', 'Power Forward', 'Center']
     erb :team
   end
 
