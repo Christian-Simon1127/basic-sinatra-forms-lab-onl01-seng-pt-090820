@@ -6,7 +6,7 @@ class App < Sinatra::Base
     
   end
 
-  post '/newteam' do 
+  post '/team' do 
     @team = 
     erb :team
   end
